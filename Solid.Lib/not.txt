@@ -1,0 +1,22 @@
+SOLÝD
+
+Single Responsibility -> Bir method veya class bir görevi üstlensin. Örn: Single Responsiblity Folder.
+
+
+Open Close -> Bir metod veya class geliþtirilmeye açýk ama deðiþtirilmeye kapalý olmalýdýr.
+	Örneðin yeni bir sýnýf eklendiðinde kullanýlan genel methodlarda gidip o sýnýf için bir deðiþiklik yapýlmamalýdýr.
+	Örn : Open Close Folder.
+
+Liskov substitution -> bir sýnýf inherit aldýðý tüm üst sýnýflarýn ve interfacelerin özelliklerini barýndýrmalýdýr.
+	Böylece Kalýtým alýnan sýnýf yerine kalýtýlan sýnýf kullanýlabilmelidir.
+	Örn: Liskov substitution Folder
+
+
+Interface Segregation -> bir interface'ye eklenecek olan method veya herhangi bir özellik
+	o interfaceyi kullanan tüm sýnýflar tarafýndan da kullanýlmalý
+	Örn: Interface Segregation Folder
+
+
+Dependency Inversion ->	Daha üst sýnýflar içerisindeki sýnýflara baðýmlý olmamalý kalýtsal olarak olmak zorunda deðil
+	bir sýnýfýn içerisinde baþka snýftan türeyen metodlar vs kullanýyorsak ve bu bir baðýmlýlýk
+	oluþturuyorsa bu prensibe terstir.
