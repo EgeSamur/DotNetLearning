@@ -1,0 +1,32 @@
+* Moq kütüphanesi fake datalar oluþturabileceðimiz 
+	ve herhangi bir sýnýf interface vs den sanki bir nesnemiz 
+	varmýþ gibi davranabileceðimiz bir kütüphanedir 
+
+* Setup ile fonksiyonlarýn dönüþ deðerlerini vs kontrol edebiliriz.
+
+* Mock<object>(MockBehavior....) þeklinde default hareketlerini ayarlayabiliriz.
+
+* Mock<object>(MockBehavior.Loose) ise test ettiðimiz sýnýfýn yada metodun 
+	içerisinde kullandýðýmýz metodlarýn setuplarýný yapmamýza gerek yok.
+	Mock<object>(MockBehavior.Default) default olarak da Loose kullanýr.
+
+* Mock<object>(MockBehavior.Strict) ise test ettiðimiz sýnýfýn yada metodun 
+	içerisinde kullandýðýmýz metodlarýn setuplarýný yapmamýza gerek var.
+
+* Setup ile propertylerin deðerlerini vs kontrol edebiliriz.
+	x.Setup(i => i.PROPNAME).Returns(VALUE);
+
+* Mock ile propertylere default deðer verebiliriz x.DefaultValue = DefaultValue.Mock;
+
+* Assertionlar için Fluentassertions kullanýyoruz hem cümle gibi daha okunabilir 
+	hemde hata mesajlarý daha kapsamlý 
+
+* exception yakalamak Action response = () => evaluate.Evaluate(from);
+	response.should.Throw<Exception>(); þeklinde kontrol edilir.
+
+* bir methodun kaç kere çaðrýldýðýný hangi parametreler ile çaðrýldýðýný 
+	kontrol edebiliriz.
+	x.Verify(i=> i.METHODNAME(HANGÝ_PARAMETRE_ÝLE_ÇALIÞTIÐI),Times.Never()) gibi 
+	Never ve HANGÝ_PARAMETRE_ÝLE_ÇALIÞTIÐI kontrol edilebilir.
+	
+
