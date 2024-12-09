@@ -1,0 +1,4 @@
+Exchange Types 
+
+Direct Exchange
+* Publisher'dan gelen mesajý 
