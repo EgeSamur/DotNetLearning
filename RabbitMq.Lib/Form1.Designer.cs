@@ -46,6 +46,7 @@
             bindQueuebutton = new Button();
             label6 = new Label();
             panel4 = new Panel();
+            button1 = new Button();
             DeclareQueueTypecomboBox = new ComboBox();
             label8 = new Label();
             declarev2button = new Button();
@@ -53,6 +54,7 @@
             label7 = new Label();
             label4 = new Label();
             panel6 = new Panel();
+            ExchangeComboBox = new ComboBox();
             label14 = new Label();
             label13 = new Label();
             comboBox1 = new ComboBox();
@@ -64,7 +66,6 @@
             label12 = new Label();
             label11 = new Label();
             connectionStatusLabel = new Label();
-            ExchangeComboBox = new ComboBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -161,6 +162,7 @@
             declareButton.TabIndex = 4;
             declareButton.Text = "Declare";
             declareButton.UseVisualStyleBackColor = true;
+            declareButton.Click += declareButton_Click;
             // 
             // panel3
             // 
@@ -218,6 +220,7 @@
             bindQueuebutton.TabIndex = 4;
             bindQueuebutton.Text = "Bind Queue";
             bindQueuebutton.UseVisualStyleBackColor = true;
+            bindQueuebutton.Click += bindQueuebutton_Click;
             // 
             // label6
             // 
@@ -230,6 +233,7 @@
             // 
             // panel4
             // 
+            panel4.Controls.Add(button1);
             panel4.Controls.Add(DeclareQueueTypecomboBox);
             panel4.Controls.Add(label8);
             panel4.Controls.Add(declarev2button);
@@ -239,6 +243,16 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(228, 114);
             panel4.TabIndex = 7;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(59, 73);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 10;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // DeclareQueueTypecomboBox
             // 
@@ -309,6 +323,14 @@
             panel6.Size = new Size(495, 298);
             panel6.TabIndex = 7;
             // 
+            // ExchangeComboBox
+            // 
+            ExchangeComboBox.FormattingEnabled = true;
+            ExchangeComboBox.Location = new Point(248, 15);
+            ExchangeComboBox.Name = "ExchangeComboBox";
+            ExchangeComboBox.Size = new Size(118, 23);
+            ExchangeComboBox.TabIndex = 13;
+            // 
             // label14
             // 
             label14.AutoSize = true;
@@ -361,6 +383,7 @@
             publishButton.TabIndex = 4;
             publishButton.Text = "Publish";
             publishButton.UseVisualStyleBackColor = true;
+            publishButton.Click += publishButton_Click;
             // 
             // ExchangeNameTypetextBox2
             // 
@@ -402,14 +425,6 @@
             connectionStatusLabel.Size = new Size(98, 15);
             connectionStatusLabel.TabIndex = 8;
             connectionStatusLabel.Text = "Connection State";
-            // 
-            // ExchangeComboBox
-            // 
-            ExchangeComboBox.FormattingEnabled = true;
-            ExchangeComboBox.Location = new Point(248, 15);
-            ExchangeComboBox.Name = "ExchangeComboBox";
-            ExchangeComboBox.Size = new Size(118, 23);
-            ExchangeComboBox.TabIndex = 13;
             // 
             // Form1
             // 
@@ -480,5 +495,6 @@
         private ComboBox comboBox1;
         private Label connectionStatusLabel;
         private ComboBox ExchangeComboBox;
+        private Button button1;
     }
 }

@@ -1,4 +1,23 @@
 Exchange Types 
 
 Direct Exchange
-* Publisher'dan gelen mesajý 
+* Publisher'dan gelen mesajý routing_key 'in ilgili olduðu sýraya gönderir.
+
+Topic Exchange 
+* Bu sefer sýranýn keyi mesajdan gelen routing_key'i içerisinde barýnmasý yeterlidir.
+	Contains gibi birebir aynýsý olmasý gerekmez.
+	Örn => Queue HEALT , routing_key healt.* 
+	, healt.# gibi
+
+Fanout Exchange
+* mesajý bütün sýralara gönderir.
+
+Header Exchange
+* routing_key yerine headerlar üzerinden mesaj kontrol edilir.
+
+Default Exchange
+* routing_key'i olmayan mesajlar bu sýraya düþer.
+
+Dead Letter Exchange
+* routing_key hiçbir sýrayla eþleþmezsse bu mesaj silinir.
+

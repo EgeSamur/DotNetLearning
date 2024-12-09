@@ -1,5 +1,6 @@
 using FluentAssertions;
 using Moq;
+using NUnit.Framework;
 using ProjectForTest.Domain;
 using ProjectForTest.ReposAndServices;
 
