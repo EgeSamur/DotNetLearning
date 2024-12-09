@@ -1,0 +1,37 @@
+* Builder Pattern,
+özellikle karmaþýk ve çok sayýda bileþeni olan nesnelerin inþa edilmesinde oldukça faydalýdýr.
+Nesnelerin adým adým yapýlandýrýlmasýna olanak tanýr ve kodun daha esnek ve bakýmý kolay olmasýný saðlar.
+
+* Factory Pattern,
+Factory Pattern, nesne oluþturma sürecini soyutlayarak, nesnelerin yaratýlmasýndaki karmaþýklýðý ve baðýmlýlýklarý yönetmenizi saðlar.
+Bu desen, esnekliði artýrýr ve özellikle nesne türlerinin dinamik olarak seçilmesi gerektiði durumlarda çok kullanýþlýdýr.
+Ayný zamanda, nesne oluþturma mantýðýndaki deðiþikliklerin merkezi hale getirilmesi sayesinde bakým ve geniþletme kolaylýðý saðlar..
+
+
+* Chain of Responsibility
+servisler arasýnda baðýmlýlýðý azaltarak zincirleme bir yapý oluþturur.
+bir handler yazýlýr ve bu handlerler bir objeyi paylaþýr ve eðer bu handler baþarýlý ise 
+diðer handlerý çaðýrýr ve bu þekilde zincirleme bir yapý oluþturulur.
+
+
+* Proxy Pattern
+bir nesnenin yerine geçen bir nesne oluþturur ve bu nesne asýl nesneye eriþim saðlar.
+
+* State Pattern
+bir nesnenin durumlarýný deðiþtirmek için kullanýlýr ve bu durumlar birbirine geçiþ yapabilir.
+
+* Observer Pattern
+bir nesnenin durumunu deðiþtirdiðinde diðer nesneleri haberdar etmek için kullanýlýr.
+stok bitti ve stok yenilendi gibi durumlarda kullanýlabilir.
+
+* Strategy Pattern
+servis devam ederken gerekli olan algoritmayý deðiþtirmek için kullanýlýr.
+ödeme sistemlerinde kullanýlýr ve ödeme yöntemlerini deðiþtirmek için kullanýlabilir.
+böylece yaratýlan nesne deðiþmeden sadece algoritma deðiþir.
+
+* Adepter Pattern
+bir nesnenin baþka bir nesneye uyum saðlamasý için kullanýlýr.
+bir iþe uygun olmayan bir nesneyi yada metodu bir adepter ile uyumlu hale getirmektir.
+priz örneði çok verilir . priz ve fiþ uyumlu olmadýðýnda bir adaptör kullanýlýr.
+Ayný nesne farklý þekillerde kullanýlabilir.
+ayný nesneyi farklý adepterler kullanarak farklý iþlemler yaptýrabiliriz.!!!!!!
