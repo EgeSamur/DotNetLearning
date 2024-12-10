@@ -35,3 +35,7 @@ bir iþe uygun olmayan bir nesneyi yada metodu bir adepter ile uyumlu hale getirm
 priz örneði çok verilir . priz ve fiþ uyumlu olmadýðýnda bir adaptör kullanýlýr.
 Ayný nesne farklý þekillerde kullanýlabilir.
 ayný nesneyi farklý adepterler kullanarak farklý iþlemler yaptýrabiliriz.!!!!!!
+
+* Singleton Pattern
+nesne bir kere oluþturulmuþ olur global þekilde eriþebilriz ve sadece ben istediðimde oluþturulur.
+unit testleri zorlaþtýrýr multithread uygulamalarda zorlayýcý olabilir.

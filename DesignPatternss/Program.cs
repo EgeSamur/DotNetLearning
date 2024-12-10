@@ -4,6 +4,7 @@ using DesignPatternss.BuilderPattern.DiffInstitutions;
 using DesignPatternss.ChainOfResponsibility;
 using DesignPatternss.FactoryPattern;
 using DesignPatternss.ObserverPattern;
+using DesignPatternss.SingletonPattern;
 using DesignPatternss.StatePattern;
 using DesignPatternss.StrategyPattern;
 using System;
@@ -106,18 +107,26 @@ class Program
         //#endregion
 
 
-        #region AdepterPattern
-        var transaction = new DesignPatternss.AdepterPattern.TransferTransaction()
-        {
-            FromIBAN = "TR123456789",
-            toIban = "TR987654321",
-            Amount = 1000
-        };
-        var adepterJson = new JsonBankApiAdepter();
-        adepterJson.ExecuteTransaction(transaction);
-        var adepterXml = new XmlBankApiAdepter();
-        adepterXml.ExecuteTransaction(transaction);
-        #endregion
+        //#region AdepterPattern
+        //var transaction = new DesignPatternss.AdepterPattern.TransferTransaction()
+        //{
+        //    FromIBAN = "TR123456789",
+        //    toIban = "TR987654321",
+        //    Amount = 1000
+        //};
+        //var adepterJson = new JsonBankApiAdepter();
+        //adepterJson.ExecuteTransaction(transaction);
+        //var adepterXml = new XmlBankApiAdepter();
+        //adepterXml.ExecuteTransaction(transaction);
+        //#endregion
+
+        //#region Singleton Pattern
+        //var cp = CountryProvider.Instance.GetCountries();
+        //foreach (var country in cp)
+        //{
+        //    Console.WriteLine(country.Name);
+        //}
+        //#endregion
 
     }
     private static Employee GenereteEmp(string fullName, string email, int type)
